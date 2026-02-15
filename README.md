@@ -1,5 +1,6 @@
 # 🤖 Ollama Local Coding Studio
 [![Python CI](https://github.com/MarkChisholm-dev/ClaudeOllamaLocal/actions/workflows/python-app.yml/badge.svg)](https://github.com/MarkChisholm-dev/ClaudeOllamaLocal/actions/workflows/python-app.yml)
+
 A lightweight, self-hosted web interface and CLI tool for interacting with local LLMs (optimized for `qwen2.5-coder`). Run your own private coding assistant on Windows, macOS, or Linux with zero data leaving your machine.
 
 ## ✨ Features
