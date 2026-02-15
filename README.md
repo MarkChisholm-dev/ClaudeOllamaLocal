@@ -2,8 +2,9 @@
 [![Python CI](https://github.com/MarkChisholm-dev/ClaudeOllamaLocal/actions/workflows/python-app.yml/badge.svg)](https://github.com/MarkChisholm-dev/ClaudeOllamaLocal/actions/workflows/python-app.yml)
 
 A lightweight, self-hosted web interface and CLI tool for interacting with local LLMs (optimized for `qwen2.5-coder`). Run your own private coding assistant on Windows, macOS, or Linux with zero data leaving your machine.
-
-![Ollama Studio Interface](https://i.ibb.co/K1ztSq7/your-image-name.png)
+<p align="center">
+  <img src="assets/image.png" alt="Ollama Studio Screenshot" width="800">
+</p>
 
 ## ✨ Features
 
@@ -26,3 +27,4 @@ Run the universal setup script to pull the model and install the `ask-ollama` CL
 
 ```bash
 python setup_agent.py
+```
