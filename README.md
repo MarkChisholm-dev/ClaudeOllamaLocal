@@ -4,10 +4,6 @@
 
 **ClaudeOllamaLocal** is a truly private, self-hosted coding assistant powered by local large language models. No data ever leaves your machine. Built for high-trust environments and sensitive intellectual property, it is suitable for workflows subject to strict NDAs, legal requirements, and TPN best practices.*
 
-<p align="center">
-  <img src="assets/image.png" alt="Ollama Studio Screenshot" width="800">
-</p>
-
 ---
 
 ## 🛡️ NDA & TPN Compliance Statement
