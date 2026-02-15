@@ -3,6 +3,8 @@
 
 A lightweight, self-hosted web interface and CLI tool for interacting with local LLMs (optimized for `qwen2.5-coder`). Run your own private coding assistant on Windows, macOS, or Linux with zero data leaving your machine.
 
+![Ollama Studio Interface](https://i.ibb.co/K1ztSq7/your-image-name.png)
+
 ## ✨ Features
 
 * **Modern Web UI**: Built with FastAPI, featuring Markdown rendering and code syntax highlighting (via Highlight.js).
