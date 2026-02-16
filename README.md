@@ -1,3 +1,41 @@
+---
+
+## 🐳 Docker Usage
+
+### Build and Run with Docker Compose
+
+1. **Ensure Ollama is running on your host and listening on all interfaces:**
+  ```bash
+  ollama serve --host 0.0.0.0
+  ```
+  This is required so the FastAPI container can connect to Ollama.
+
+2. **Build and start the FastAPI app:**
+  ```bash
+  docker compose build
+  docker compose up -d
+  ```
+
+3. **Access the app:**
+  Visit [http://localhost:8000](http://localhost:8000) in your browser.
+
+#### Linux Users: Important Networking Note
+
+On Linux, Docker containers cannot reach services on the host via `host.docker.internal` by default. This project uses `network_mode: host` in `docker-compose.yml` for Linux, so the container can access Ollama on `localhost:11434`. This means:
+
+- You must run Docker with sufficient privileges to use host networking.
+- Port mappings in `docker-compose.yml` are ignored with `network_mode: host` (the app binds directly to your host network).
+
+#### Troubleshooting
+
+- **500 Internal Server Error on /ask:**
+  - Ensure Ollama is running and listening on `0.0.0.0:11434`.
+  - Check that `network_mode: host` is enabled in `docker-compose.yml` (Linux only).
+  - If using Windows or Mac, `host.docker.internal` should work automatically.
+- **Connection refused:**
+  - Make sure the FastAPI container is running and healthy.
+  - Confirm Ollama is running and accessible from the container.
+
 # ClaudeOllamaLocal
 
 ## 🔒 100% Local. NDA & TPN-Ready Private Coding Assistant
