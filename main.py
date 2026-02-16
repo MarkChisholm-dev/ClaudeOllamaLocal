@@ -3,13 +3,15 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import httpx
+import os
 
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
+OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "localhost")
+OLLAMA_URL = f"http://{OLLAMA_HOST}:11434/api/chat"
 MODEL = "qwen2.5-coder"
 history = []
 
