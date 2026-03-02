@@ -253,12 +253,12 @@ On Linux, `network_mode: host` means:
 
 ## 🎨 Screenshots
 
-> _Add your screenshots here!_
+### **Web Interface**
 
-```
-Web UI: Beautiful chat interface with code highlighting
-CLI: Terminal-based interaction for power users
-```
+<div align="center">
+  <img src="assets/image.png" alt="ClaudeOllamaLocal Web Interface" width="800px">
+  <p><em>Beautiful chat interface with Markdown rendering and syntax-highlighted code blocks</em></p>
+</div>
 
 ---
 
